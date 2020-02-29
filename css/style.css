@@ -1,0 +1,202 @@
+/*
+Main Styles
+*/
+body {
+    font-family: 'Inconsolata', sans-serif;
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    background-color: #212121;
+}
+section#error {
+    padding: 60px 0;
+}
+section#error h1.section-title {
+    color: #b9e085;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+section#error h1.section-title:after {
+    display: block;
+    position: absolute;
+    background-color: #707070;
+    height: 1px;
+    width: 160px;
+    bottom: 0;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+}
+section#error p.subtitle {
+    margin-top: 15px;
+    text-align: center;
+    color: #b4b4b4;
+}
+.error-code {
+    text-align: left;
+    display: inline-block;
+    font-size: 2em;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+ul.links {
+    padding-left: 0;
+    display: inline-block;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+ul.links li {
+    display: inline-block;
+    list-style: none;
+}
+ul.links li a {
+    display: block;
+    padding: 5px 15px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+ul.links li a:hover {
+    display: block;
+    padding: 5px 15px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+}
+footer {
+    padding: 20px 10px;
+    background-color: #000;
+}
+footer .footers-msg {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+footer .footers-msg a {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+footer .footers-msg a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+}
+footer .footers-msg span.nick {
+    display: block;
+    font-size: 0.7rem;
+    opacity: 0.5;
+    transition: .3s;
+}
+footer:hover .footers-msg span.nick {
+    opacity: 1;
+}
+footer .footers-msg span.nick a {
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+/**
+Helpers
+ */
+.m-auto {
+    margin: auto;
+}
+.light-blue {
+    color: #5cb2fc;
+}
+.violet {
+    color: #c38ce4;
+}
+.yellow {
+    color: #b9e085;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.text-center {
+    text-align: center;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*
+Love <3
+*/
+.love {
+    background-color: red;
+    display: inline-block;
+    height: 6px;
+    margin: 0 3px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 6px;
+}
+.love:before,
+.love:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 6px;
+    position: absolute;
+    width: 6px;
+}
+.love:before {
+    top: -3px;
+    left: 0;
+}
+.love:after {
+    left: 3px;
+    top: 0;
+}
+/*
+Media
+ */
+@media (max-width: 768px) {
+    p.subtitle {
+        font-size: 14px;
+    }
+    .error-code {
+        text-align: left;
+        display: inline-block;
+        font-size: 1em;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    ul.links li a {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
+@media (min-width: 576px){
+    .container {
+        max-width: 540px;
+    }
+
+}
+@media (min-width: 768px){
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}

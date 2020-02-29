@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error 403 - Forbidden </title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/oK8VEtd.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section id="error">
+    <div class="container"><h1 class="section-title"># Forbidden</h1>
+        <p class="subtitle">{# Access to this resource on the server is denied. #}</p>
+        <div class="text-center mt-20">
+            <div class="error-code m-auto"><p class="code"><span class="light-blue">{</span></p>
+                <p class="code">&nbsp;&nbsp;&nbsp;&nbsp;status_code : <span class="violet">403</span>,</p>
+                <p class="code">&nbsp;&nbsp;&nbsp;&nbsp;message : <span class="light-blue">"</span><span class="yellow">No permission to access</span><span
+                        class="light-blue">"</span></p>
+                <p class="code"><span class="light-blue">}</span></p></div>
+        </div>
+        <div class="text-center mt-10">
+            <ul class="links">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">OtherLink</a></li>
+                <li><a href="#">Google</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container"><p class="footers-msg"> © <span id="year"></span> Company Name. For support, <a
+            href="mailto:mail@mail.com">contact us</a>. <span
+            class="nick">Made with <i class="love" data-title="love"></i> by <a
+            href="https://nidev.tech/" target="_blank" rel="noopener"> <span class="light-blue">Nicolae</span> <span
+            class="yellow">Casîr</span></a></span></p></div>
+</footer>
+<script>document.getElementById('year').innerText = new Date().getFullYear();</script>
+</body>
+</html>
